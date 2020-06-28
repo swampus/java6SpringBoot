@@ -1,10 +1,34 @@
 package com.company.model;
 
+import com.sun.javafx.geom.transform.Identity;
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+
+import javax.persistence.*;
+
+
+@Entity
 public class CorvidForm {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long corvidFormPk;
+
+    @Column
     private String firstName;
+    @Column
     private String lastName;
+    @Column
     private String personalCode;
+    @Column
     private Boolean signature;
+
+    public Long getCorvidFormPk() {
+        return corvidFormPk;
+    }
+
+    public void setCorvidFormPk(Long corvidFormPk) {
+        this.corvidFormPk = corvidFormPk;
+    }
 
     public String getFirstName() {
         return firstName;

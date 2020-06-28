@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.controller.CorvidController;
+import com.company.service.CovidFormService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
