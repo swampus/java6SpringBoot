@@ -10,6 +10,10 @@ import java.util.List;
 @Component
 public class CovidFormService {
 
+    @Autowired
+    private CorvidFormService corvidFormService;
+
+
     private CorvidFormRepository corvidFormRepository;
 
     @Autowired

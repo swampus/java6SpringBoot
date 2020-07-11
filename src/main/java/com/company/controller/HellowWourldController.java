@@ -12,6 +12,11 @@ import java.util.stream.Collectors;
 @RestController
 public class HellowWourldController {
 
+    @GetMapping("/")
+    public String index() {
+        return "Welcome to the home page!";
+    }
+
     @GetMapping("/hi/{id}")
     public List<Cat> hello(@PathVariable String id,
                            @PathParam("index") String index) {
